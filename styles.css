@@ -1,4 +1,5 @@
 .container{
+  box-sizing: border-box;
   display:flex;
   flex-flow: row wrap;
   height:600px;
@@ -10,7 +11,20 @@
 }
 
 .cell{
+  font-size: 2em;
+  box-sizing: border-box;
+  border:1px solid black;
   height:100px;
   width:100px;
   margin:auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;;
+}
+
+.view{
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size:2.5em;
+  padding:1em 0 0 1em;
 }
