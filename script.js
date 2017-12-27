@@ -7,6 +7,9 @@ const view = {
       let show = e.target.innerHTML;
       viewScreen.innerHTML += show;
     });
+  },
+  clearView: function(){
+    caclFunc.clear();
   }
 
 
@@ -20,7 +23,12 @@ const calcFunc = {
   subtract: function(){
 
   },
-  clear: function(){
+  multiply: function(){
 
+  },
+
+  clear: function(){
+    let view = document.querySelector('js-view');
+    view.innerHTML = '';
   }
 }
