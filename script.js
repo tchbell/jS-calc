@@ -8,14 +8,23 @@ const view = {
       viewScreen.innerHTML += show;
     });
   },
-  clearView: function(){
-    caclFunc.clear();
-  }
+  btnHandle: function(){
+    let btnHandler = document.querySelector('.js-container');
+    btnHandler.addEventListener('click', function(event){
+      let btn = event.target;
 
+      switch(btn.className){
+        case('cell clear'):
+        document.querySelector('.js-view').innerHTML = '';
+        console.log("ok");
+        break;
+      }
+    })
+  }
 
 }
 view.updateView();
-
+view.btnHandle();
 const calcFunc = {
   add: function(){
 
