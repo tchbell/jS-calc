@@ -52,10 +52,6 @@ const view = {
           viewScreen.innerHTML = "Nothing Entered"
           break;
         }
-        // if(mathType.type ==='addition'){
-        // console.log(true);
-        //   viewScreen.innerHTML = calcFunc.add(integerOne, integerTwo);
-        // }
       }
 
     });
