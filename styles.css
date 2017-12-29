@@ -1,11 +1,15 @@
 .container{
   display:flex;
   flex-flow: row wrap;
-  height:600px;
+  height:650px;
   width:400px;
 }
 .view{
   height: 100px;
+  width:400px;
+}
+.mini-view{
+  height:50px;
   width:400px;
 }
 
@@ -14,4 +18,13 @@
   width:100px;
   margin:auto;
   font-size:2em;
+}
+
+.equal{
+  background-color:blue;
+  width:400px;
+  height:100px;
+  text-align:center;
+  font-size:5em;
+  color:white;
 }

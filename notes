@@ -1,0 +1,15 @@
+
+User Story: I can add, subtract, multiply and divide two numbers.
+done
+
+User Story: I can clear the input field with a clear button.
+done
+
+User Story: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.
+number gets selected: store value in mathHold
+then math gets selected: set mathType to whatever was clicked
+once second number is selected  the math is done and that becomes the current value :
+use mathHoldOne to hold the first value clicked then have second num go to mathHoldTWo
+
+basic stuff done
+now need to make it so when another math button is hit the currently mathtype.type executues math1 becomes that numthe mahttype updates and numtwo goes to 0
