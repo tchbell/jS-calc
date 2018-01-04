@@ -45,7 +45,7 @@ const view = {
             mathHoldOne.num = parseInt(screenValue.innerHTML);
             mathHoldOne.set = true;
             screenValue.innerHTML = '';
-            mathType.type = "mulitply";
+            mathType.type = "multiply";
           }
           if(mathHoldOne.set && mathHoldTwo.set){
             //if both numbers are set cycle through calcFunc to find which mathType.type matches
@@ -116,7 +116,7 @@ const view = {
             mathHoldOne.num = parseInt(screenValue.innerHTML);
             mathHoldOne.set = true;
             screenValue.innerHTML = '';
-            mathType.type = "subract";
+            mathType.type = "subtract";
           }
           if(mathHoldOne.set && mathHoldTwo.set){
             for(let name in calcFunc){
@@ -138,15 +138,20 @@ const view = {
             mathHoldTwo.num = 0;
             mathHoldOne.num = 0;
             mathHoldOne.set = false;
-          }else if(mathType.type === "subract"){
+          }else if(mathType.type === "subtract"){
+            // screenValue.innerHTML = calcFunc.subtract(mathHoldOne.num, mathHoldTwo.num);
+            // miniView.innerHTML = calcFunc.subtract(mathHoldOne.num, mathHoldTwo.num);
+            // mathHoldOne.num = (mathHoldOne.num - mathHoldTwo.num);
+            // mathHoldTwo.num = 0;
+            // mathHoldOne.num = 0;
+            // mathHoldOne.set = false;
             screenValue.innerHTML = calcFunc.subtract(mathHoldOne.num, mathHoldTwo.num);
             miniView.innerHTML = calcFunc.subtract(mathHoldOne.num, mathHoldTwo.num);
-            mathHoldOne.num = (mathHoldOne.num - mathHoldTwo.num);
             mathHoldTwo.num = 0;
             mathHoldOne.num = 0;
             mathHoldOne.set = false;
           }
-          else if(mathType.type === "mulitply"){
+          else if(mathType.type === "multiply"){
             screenValue.innerHTML = calcFunc.multiply(mathHoldOne.num, mathHoldTwo.num);
             miniView.innerHTML = calcFunc.multiply(mathHoldOne.num, mathHoldTwo.num);
             mathHoldOne.num = (mathHoldOne.num * mathHoldTwo.num);
